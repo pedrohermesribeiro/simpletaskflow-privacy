@@ -1,46 +1,287 @@
-Política de Privacidade — SimpleTaskFlow
-Última atualização: 08 de outubro de 2026
-1. Introdução
-O SimpleTaskFlow é um aplicativo de gerenciamento de tarefas pessoais, desenvolvido para ajudar os usuários a organizar suas atividades, definir prioridades, acompanhar prazos e receber lembretes.
-Esta Política de Privacidade explica como o aplicativo utiliza, armazena e protege as informações inseridas pelos usuários.
-Desenvolvedor: Pedro Hermes Apps
-2. Informações armazenadas
-O SimpleTaskFlow permite que o usuário registre informações relacionadas às suas tarefas, incluindo:
-•	Títulos das tarefas;
-•	Categorias;
-•	Prioridades;
-•	Datas e horários;
-•	Status das tarefas;
-•	Informações de arquivamento.
-Essas informações são armazenadas localmente no dispositivo, utilizando a tecnologia AsyncStorage.
-O aplicativo não exige criação de conta ou autenticação.
-3. Armazenamento e transmissão de dados
-O SimpleTaskFlow não possui servidor próprio ou sistema de sincronização em nuvem.
-As informações das tarefas são mantidas no armazenamento local do dispositivo e utilizadas para oferecer as funcionalidades do aplicativo.
-O desenvolvedor não recebe os conteúdos das tarefas por meio de um backend próprio.
-O armazenamento local não deve ser considerado um mecanismo de criptografia ou proteção absoluta contra acesso não autorizado. Recursos de backup do sistema operacional podem estar sujeitos às configurações do dispositivo.
-4. Notificações
-O aplicativo utiliza notificações locais para lembrar o usuário sobre tarefas e compromissos programados.
-As notificações são processadas no dispositivo por meio dos recursos do sistema operacional.
-O usuário pode gerenciar ou desativar as permissões de notificações nas configurações do Android.
-5. Compartilhamento de informações
-O SimpleTaskFlow não possui funcionalidades próprias para transmitir ou compartilhar o conteúdo das tarefas com servidores do desenvolvedor.
-Eventuais tratamentos de dados realizados pelo sistema operacional ou por componentes de terceiros devem ser considerados conforme suas respectivas funcionalidades e políticas.
-6. Exclusão de dados
-O usuário pode excluir tarefas diretamente pelo aplicativo.
-As tarefas arquivadas permanecem armazenadas localmente enquanto não forem excluídas.
-A remoção dos dados do aplicativo pelas configurações do Android normalmente elimina os dados locais mantidos pelo aplicativo, ressalvadas eventuais cópias de segurança do dispositivo.
-7. Segurança das informações
-O SimpleTaskFlow utiliza o armazenamento disponibilizado pelo ambiente Android e pelas bibliotecas de persistência adotadas.
-Recomenda-se que o usuário mantenha seu dispositivo protegido por senha, PIN ou autenticação biométrica.
-Nenhum mecanismo de armazenamento oferece garantia absoluta de segurança.
-8. Privacidade de crianças
-O SimpleTaskFlow é uma ferramenta geral de produtividade e não foi desenvolvido especificamente para crianças.
-O público-alvo declarado na Google Play será definido de acordo com a classificação e as características do aplicativo.
-9. Alterações nesta política
-Esta Política de Privacidade poderá ser atualizada para refletir modificações nas funcionalidades do aplicativo, nas tecnologias utilizadas ou nas exigências legais e regulatórias.
-A versão atualizada será disponibilizada nesta mesma página.
-10. Contato
-Para dúvidas relacionadas à privacidade e ao funcionamento do SimpleTaskFlow, entre em contato com o desenvolvedor:
-Pedro Hermes Apps
-E-mail: pedrohermesrib@gmail.com
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidade do aplicativo SimpleTaskFlow.">
+  <title>Política de Privacidade | SimpleTaskFlow</title>
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --background: #f4f7fb;
+      --surface: #ffffff;
+      --text: #243247;
+      --muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 48px auto;
+      padding: 40px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    header {
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 2rem;
+      line-height: 1.3;
+      margin: 0 0 12px;
+    }
+
+    h2 {
+      color: #1e40af;
+      font-size: 1.25rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin: 12px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
+
+    .subtitle, .updated {
+      color: var(--muted);
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin: 0;
+        padding: 24px 20px;
+        border: none;
+        border-radius: 0;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Política de Privacidade</h1>
+      <p class="subtitle"><strong>SimpleTaskFlow</strong></p>
+      <p class="updated">Última atualização: 08 de outubro de 2026</p>
+    </header>
+
+    <section>
+      <h2>1. Introdução</h2>
+      <p>
+        O SimpleTaskFlow é um aplicativo de gerenciamento de tarefas
+        pessoais, desenvolvido para ajudar os usuários a organizar
+        suas atividades, definir prioridades, acompanhar prazos e
+        receber lembretes.
+      </p>
+      <p>
+        Esta Política de Privacidade explica como o aplicativo
+        utiliza, armazena e protege as informações inseridas
+        pelos usuários.
+      </p>
+      <p><strong>Desenvolvedor:</strong> Pedro Hermes Apps</p>
+    </section>
+
+    <section>
+      <h2>2. Informações armazenadas</h2>
+      <p>
+        O SimpleTaskFlow permite que o usuário registre informações
+        relacionadas às suas tarefas, incluindo:
+      </p>
+      <ul>
+        <li>Títulos das tarefas;</li>
+        <li>Categorias;</li>
+        <li>Prioridades;</li>
+        <li>Datas e horários;</li>
+        <li>Status das tarefas;</li>
+        <li>Informações de arquivamento.</li>
+      </ul>
+      <p>
+        Essas informações são armazenadas localmente no dispositivo,
+        utilizando a tecnologia AsyncStorage.
+      </p>
+      <p>
+        O aplicativo não exige criação de conta ou autenticação.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Armazenamento e transmissão de dados</h2>
+      <p>
+        O SimpleTaskFlow não possui servidor próprio ou sistema
+        de sincronização em nuvem.
+      </p>
+      <p>
+        As informações das tarefas são mantidas no armazenamento
+        local do dispositivo e utilizadas para oferecer as
+        funcionalidades do aplicativo.
+      </p>
+      <p>
+        O desenvolvedor não recebe os conteúdos das tarefas
+        por meio de um backend próprio.
+      </p>
+      <p>
+        O armazenamento local não deve ser considerado um mecanismo
+        de criptografia ou proteção absoluta contra acesso não
+        autorizado. Recursos de backup do sistema operacional podem
+        estar sujeitos às configurações do dispositivo.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Notificações</h2>
+      <p>
+        O aplicativo utiliza notificações locais para lembrar
+        o usuário sobre tarefas e compromissos programados.
+      </p>
+      <p>
+        As notificações são processadas no dispositivo por meio
+        dos recursos do sistema operacional.
+      </p>
+      <p>
+        O usuário pode gerenciar ou desativar as permissões de
+        notificações nas configurações do Android.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Compartilhamento de informações</h2>
+      <p>
+        O SimpleTaskFlow não possui funcionalidades próprias para
+        transmitir ou compartilhar o conteúdo das tarefas com
+        servidores do desenvolvedor.
+      </p>
+      <p>
+        Eventuais tratamentos de dados realizados pelo sistema
+        operacional ou por componentes de terceiros devem ser
+        considerados conforme suas respectivas funcionalidades
+        e políticas.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Exclusão de dados</h2>
+      <p>
+        O usuário pode excluir tarefas diretamente pelo aplicativo.
+      </p>
+      <p>
+        As tarefas arquivadas permanecem armazenadas localmente
+        enquanto não forem excluídas.
+      </p>
+      <p>
+        A remoção dos dados do aplicativo pelas configurações do
+        Android normalmente elimina os dados locais mantidos pelo
+        aplicativo, ressalvadas eventuais cópias de segurança
+        do dispositivo.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Segurança das informações</h2>
+      <p>
+        O SimpleTaskFlow utiliza o armazenamento disponibilizado
+        pelo ambiente Android e pelas bibliotecas de persistência
+        adotadas.
+      </p>
+      <p>
+        Recomenda-se que o usuário mantenha seu dispositivo protegido
+        por senha, PIN ou autenticação biométrica.
+      </p>
+      <p>
+        Nenhum mecanismo de armazenamento oferece garantia
+        absoluta de segurança.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Privacidade de crianças</h2>
+      <p>
+        O SimpleTaskFlow é uma ferramenta geral de produtividade
+        e não foi desenvolvido especificamente para crianças.
+      </p>
+      <p>
+        O público-alvo declarado na Google Play será definido
+        de acordo com a classificação e as características
+        do aplicativo.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Alterações nesta política</h2>
+      <p>
+        Esta Política de Privacidade poderá ser atualizada para
+        refletir modificações nas funcionalidades do aplicativo,
+        nas tecnologias utilizadas ou nas exigências legais
+        e regulatórias.
+      </p>
+      <p>
+        A versão atualizada será disponibilizada nesta mesma página.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Contato</h2>
+      <p>
+        Para dúvidas relacionadas à privacidade e ao funcionamento
+        do SimpleTaskFlow, entre em contato com o desenvolvedor:
+      </p>
+      <p><strong>Pedro Hermes Apps</strong></p>
+      <p>
+        E-mail:
+        <a href="mailto:pedrohermesrib@gmail.com">
+          pedrohermesrib@gmail.com
+        </a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Pedro Hermes Apps — SimpleTaskFlow
+    </footer>
+  </main>
+</body>
+</html>
